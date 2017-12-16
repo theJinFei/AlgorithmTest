@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Info>
+
+<Version>2.4.1</Version>
+
+<News>
+Version 2.4.1 What's New
+
+1.代码查看界面可一键复制代码到剪切板
+2.修复了Top Most状态下提交代码会导致提交界面被遮挡的问题
+3.修复了离线题目题号输入框可输入带前导零的题号导致错误
+4.修复了筛选后只有一页筛选结果的错误
+5.Tools菜单增加计算器菜单项
+***注意：请确保程序存放的路径中没有中文字符，否则将会导致程序异常
+***如果划词翻译失效，请清空缓存或者刷新页面即可（网速会影响框架加载）
+</News>
+
+<Download>https://raw.githubusercontent.com/763461297/UpdateDirect/master/POJCodeSubmitter_2_4_1_update.pcsd</Download>
+
+</Info>

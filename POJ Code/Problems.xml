@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<table>
+  <stage name="第一阶段 初级：第1周 - 第4周">
+    <item name="基本算法">
+      <subitem name="枚举">
+        <td>1753</td>
+        <td>2965</td>
+      </subitem>
+      <subitem name="贪心">
+        <td>1328</td>
+        <td>2109</td>
+        <td>2586</td>
+      </subitem>
+      <subitem name="分治法">
+        <td>2524</td>
+      </subitem>
+      <subitem name="递推">
+        <td>2506</td>
+      </subitem>
+      <subitem name="构造法">
+        <td>3295</td>
+      </subitem>
+      <subitem name="模拟法">
+        <td>1068</td>
+        <td>2632</td>
+        <td>1573</td>
+        <td>2993</td>
+        <td>2996</td>
+      </subitem>
+    </item>
+    <item name="图算法">
+      <subitem name="图的深度优先遍历和广度优先遍历">
+        <td>3278</td>
+        <td>2049</td>
+        <td>3083</td>
+      </subitem>
+      <subitem name="最短路径算法">
+        <td>1860</td>
+        <td>3259</td>
+        <td>1062</td>
+        <td>2253</td>
+        <td>1125</td>
+        <td>2240</td>
+      </subitem>
+      <subitem name="最小生成树算法">
+        <td>1789</td>
+        <td>2485</td>
+        <td>1258</td>
+        <td>3026</td>
+      </subitem>
+      <subitem name="拓扑排序">
+        <td>1094</td>
+        <td>3267</td>
+        <td>3687</td>
+      </subitem>
+      <subitem name="二分图的最大匹配">
+        <td>3041</td>
+        <td>3020</td>
+      </subitem>
+      <subitem name="最大流的增广路算法">
+        <td>1459</td>
+        <td>3436</td>
+      </subitem>
+    </item>
+    <item name="数据结构">
+      <subitem name="串">
+        <td>1035</td>
+        <td>3080</td>
+        <td>1936</td>
+      </subitem>
+      <subitem name="排序">
+        <td>2388</td>
+        <td>2299</td>
+      </subitem>
+      <subitem name="简单并查集的应用">
+        <td>1611</td>
+      </subitem>
+      <subitem name="哈希表和二分查找等高效查找法">
+        <td>3349</td>
+        <td>3274</td>
+        <td>2151</td>
+        <td>1840</td>
+        <td>2002</td>
+        <td>2503</td>
+      </subitem>
+      <subitem name="哈夫曼树">
+        <td>3253</td>
+      </subitem>
+      <subitem name="堆,优先队列">
+        <td>2442</td>
+        <td>1442</td>
+      </subitem>
+      <subitem name="trie树">
+        <td>2513</td>
+        <td>2418</td>
+      </subitem>
+    </item>
+    <item name="简单搜索">
+      <subitem name="深度优先搜索">
+        <td>2488</td>
+        <td>3083</td>
+        <td>3009</td>
+        <td>1321</td>
+        <td>2251</td>
+      </subitem>
+      <subitem name="广度优先搜索">
+        <td>3278</td>
+        <td>1426</td>
+        <td>3126</td>
+        <td>3087</td>
+        <td>3414</td>
+      </subitem>
+      <subitem name="简单搜索技巧和剪枝">
+        <td>2531</td>
+        <td>1416</td>
+        <td>2676</td>
+        <td>1129</td>
+      </subitem>
+    </item>
+    <item name="动态规划">
+      <subitem name="背包问题">
+        <td>1837</td>
+        <td>1276</td>
+      </subitem>
+      <subitem name="型如下表的简单DP">
+        <td>3267</td>
+        <td>1836</td>
+        <td>1260</td>
+        <td>2533</td>
+        <td>3176</td>
+        <td>1080</td>
+        <td>1159</td>
+      </subitem>
+    </item>
+    <item name="数学">
+      <subitem name="组合数学">
+        <td>3252</td>
+        <td>1850</td>
+        <td>1019</td>
+        <td>1942</td>
+      </subitem>
+      <subitem name="数论">
+        <td>2635</td>
+        <td>3292</td>
+        <td>1845</td>
+        <td>2115</td>
+      </subitem>
+      <subitem name="计算方法">
+        <td>3273</td>
+        <td>3258</td>
+        <td>1905</td>
+        <td>3122</td>
+      </subitem>
+    </item>
+    <item name="计算几何学">
+      <subitem name="几何公式">
+        <td>1265</td>
+      </subitem>
+      <subitem name="叉积和点积的运用">
+        <td>2031</td>
+        <td>1039</td>
+      </subitem>
+      <subitem name="多边型的简单算法和相关判定">
+        <td>1408</td>
+        <td>1584</td>
+      </subitem>
+      <subitem name="凸包">
+        <td>2187</td>
+        <td>1113</td>
+      </subitem>
+    </item>
+  </stage>
+  <stage name="第二阶段 中级：第4周 - 第9周">
+    <item name="基本算法">
+      <subitem name="C++的标准模版库的应用">
+        <td>3096</td>
+        <td>3007</td>
+      </subitem>
+      <subitem name="较为复杂的模拟题的训练">
+        <td>3393</td>
+        <td>1472</td>
+        <td>3371</td>
+        <td>1027</td>
+        <td>2706</td>
+      </subitem>
+    </item>
+    <item name="图算法">
+      <subitem name="差分约束系统的建立和求解">
+        <td>1201</td>
+        <td>2983</td>
+        <td>3159</td>
+        <td>1275</td>
+        <td>1364</td>
+      </subitem>
+      <subitem name="最小费用最大流">
+        <td>2516</td>
+        <td>2195</td>
+        <td>3422</td>
+      </subitem>
+      <subitem name="双连通分量">
+        <td>2942</td>
+        <td>3694</td>
+      </subitem>
+      <subitem name="强连通分支及其缩点">
+        <td>2186</td>
+        <td>3592</td>
+        <td>3114</td>
+      </subitem>
+      <subitem name="图的割边和割点">
+        <td>3352</td>
+      </subitem>
+      <subitem name="最小割模型">
+        <td>3308</td>
+        <td>3155</td>
+      </subitem>
+      <subitem name="KM算法(最大权/最小权）">
+        <td>2195</td>
+        <td>2400</td>
+        <td>3686</td>
+      </subitem>
+    </item>
+    <item name="数据结构">
+      <subitem name="线段树">
+        <td>2528</td>
+        <td>2828</td>
+        <td>2777</td>
+        <td>2886</td>
+        <td>2750</td>
+      </subitem>
+      <subitem name="静态二叉检索树,平衡树treap,splay">
+        <td>2482</td>
+        <td>2352</td>
+        <td>2892</td>
+        <td>3468</td>
+      </subitem>
+      <subitem name="树状树组">
+        <td>1195</td>
+        <td>3321</td>
+      </subitem>
+      <subitem name="RMQ">
+        <td>3264</td>
+        <td>3368</td>
+      </subitem>
+      <subitem name="并查集的高级应用">
+        <td>1703</td>
+        <td>2492</td>
+      </subitem>
+      <subitem name="KMP算法">
+        <td>1961</td>
+        <td>2406</td>
+      </subitem>
+    </item>
+    <item name="搜索">
+      <subitem name="最优化剪枝和可行性剪枝">
+        <td>1699</td>
+      </subitem>
+      <subitem name="搜索的技巧和优化">
+        <td>3411</td>
+        <td>1724</td>
+      </subitem>
+      <subitem name="记忆化搜索">
+        <td>3373</td>
+        <td>1691</td>
+      </subitem>
+    </item>
+    <item name="动态规划">
+      <subitem name="较为复杂的动态规划">
+        <td>1191</td>
+        <td>1054</td>
+        <td>3280</td>
+        <td>2029</td>
+        <td>2948</td>
+        <td>1925</td>
+        <td>3034</td>
+      </subitem>
+      <subitem name="记录状态的动态规划">
+        <td>3254</td>
+        <td>2411</td>
+        <td>1185</td>
+      </subitem>
+      <subitem name="树型动态规划">
+        <td>2057</td>
+        <td>1947</td>
+        <td>2486</td>
+        <td>3140</td>
+      </subitem>
+    </item>
+    <item name="数学">
+      <subitem name="组合数学,polya定理,置换群">
+        <td>1286</td>
+        <td>2409</td>
+        <td>3270</td>
+        <td>1026</td>
+      </subitem>
+      <subitem name="高斯消元法">
+        <td>2947</td>
+        <td>1487</td>
+        <td>2065</td>
+        <td>1166</td>
+        <td>1222</td>
+      </subitem>
+      <subitem name="概率问题">
+        <td>3071</td>
+        <td>3440</td>
+      </subitem>
+      <subitem name="GCD、扩展的欧几里德">
+        <td>1061</td>
+        <td>2891</td>
+        <td>3101</td>
+        <td>2115</td>
+      </subitem>
+      <subitem name="计算方法(矩阵、三分等)">
+        <td>2976</td>
+        <td>3150</td>
+        <td>3422</td>
+        <td>3070</td>
+        <td>3301</td>
+      </subitem>
+      <subitem name="随机化算法">
+        <td>3318</td>
+        <td>2454</td>
+      </subitem>
+      <subitem name="杂题">
+        <td>1870</td>
+        <td>3296</td>
+        <td>3286</td>
+        <td>1095</td>
+      </subitem>
+    </item>
+    <item name="计算几何学">
+      <subitem name="坐标离散化">
+        <td>1151</td>
+      </subitem>
+      <subitem name="扫描线算法">
+        <td>1765</td>
+        <td>1177</td>
+        <td>1151</td>
+        <td>3277</td>
+        <td>2280</td>
+        <td>3004</td>
+      </subitem>
+      <subitem name="多边形的核">
+        <td>3130</td>
+        <td>3335</td>
+      </subitem>
+      <subitem name="几何工具的综合应用">
+        <td>1819</td>
+        <td>1066</td>
+        <td>2043</td>
+        <td>3227</td>
+        <td>2165</td>
+        <td>3429</td>
+      </subitem>
+    </item>
+  </stage>
+  <stage name="第三阶段 高级：第10周 - 第18周">
+    <item name="基本算法">
+      <subitem name="代码快速写成">
+        <td>2525</td>
+        <td>1684</td>
+        <td>1421</td>
+        <td>1048</td>
+        <td>2050</td>
+        <td>3306</td>
+      </subitem>
+      <subitem name="保证正确性和高效性">
+        <td>3434</td>
+      </subitem>
+    </item>
+    <item name="图算法">
+      <subitem name="度限制最小生成树和第K最短路,分数规划">
+        <td>1639</td>
+        <td>3621</td>
+        <td>2976</td>
+        <td>3255</td>
+        <td>2513</td>
+        <td>2449</td>
+      </subitem>
+      <subitem name="最短路,最小生成树,二分图,最大流问题的相关理论">
+        <td>3155</td>
+        <td>2112</td>
+        <td>1966</td>
+        <td>3281</td>
+        <td>1087</td>
+        <td>2289</td>
+        <td>3216</td>
+        <td>2446</td>
+      </subitem>
+      <subitem name="最优比率生成树">
+        <td>2728</td>
+      </subitem>
+      <subitem name="最小树形图">
+        <td>3164</td>
+      </subitem>
+      <subitem name="次小生成树">
+        <td>1679</td>
+      </subitem>
+      <subitem name="2-SAT问题">
+        <td>3207</td>
+        <td>3678</td>
+        <td>3683</td>
+        <td>3648</td>
+        <td>2723</td>
+        <td>2749</td>
+      </subitem>
+      <subitem name="无向图、有向图的最小环">
+        <td>1734</td>
+      </subitem>
+    </item>
+    <item name="数据结构">
+      <subitem name="trie图的建立和应用,DFA">
+        <td>2778</td>
+        <td>3691</td>
+      </subitem>
+      <subitem name="LCA和RMQ问题">
+        <td>1330</td>
+      </subitem>
+      <subitem name="双端队列和它的应用">
+        <td>2823</td>
+      </subitem>
+      <subitem name="左偏树">
+        <td>3666</td>
+        <td>3016</td>
+      </subitem>
+      <subitem name="后缀树,后缀数组">
+        <td>3415</td>
+        <td>3294</td>
+        <td>2774</td>
+        <td>2758</td>
+      </subitem>
+    </item>
+    <item name="搜索">
+      <subitem name="较麻烦的搜索题目训练">
+        <td>1069</td>
+        <td>3322</td>
+        <td>1475</td>
+        <td>1924</td>
+        <td>2049</td>
+        <td>3426</td>
+      </subitem>
+      <subitem name="广搜的状态优化">
+        <td>1768</td>
+        <td>1184</td>
+        <td>1872</td>
+        <td>1324</td>
+        <td>2046</td>
+        <td>1482</td>
+      </subitem>
+      <subitem name="深搜的优化">
+        <td>3131</td>
+        <td>2870</td>
+        <td>2286</td>
+      </subitem>
+    </item>
+    <item name="动态规划">
+      <subitem name="需要用数据结构优化的动态规划">
+        <td>2754</td>
+        <td>3378</td>
+        <td>3017</td>
+      </subitem>
+      <subitem name="四边形不等式理论、斜率优化">
+        <td>1160</td>
+        <td>1180</td>
+        <td>3709</td>
+      </subitem>
+      <subitem name="较难的状态DP、插头DP">
+        <td>3133</td>
+        <td>1739</td>
+        <td>2411</td>
+        <td>1763</td>
+      </subitem>
+    </item>
+    <item name="数学">
+      <subitem name="组合数学">
+        <td>2888</td>
+        <td>2154</td>
+      </subitem>
+      <subitem name="博奕论">
+        <td>3317</td>
+        <td>1085</td>
+      </subitem>
+    </item>
+    <item name="计算几何学">
+      <subitem name="半平面求交">
+        <td>3384</td>
+        <td>2540</td>
+      </subitem>
+      <subitem name="可视图的建立">
+        <td>2966</td>
+      </subitem>
+      <subitem name="对踵点">
+        <td>2079</td>
+      </subitem>
+    </item>
+    <item name="其他">
+      <subitem name="综合题">
+        <td>1478</td>
+        <td>1462</td>
+        <td>2729</td>
+        <td>2048</td>
+        <td>3336</td>
+        <td>3315</td>
+        <td>2148</td>
+        <td>1263</td>
+      </subitem>
+    </item>
+  </stage>
+</table>

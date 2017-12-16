@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1463117013 source:c:\users\qihao\desktop\oj\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<string>
+
