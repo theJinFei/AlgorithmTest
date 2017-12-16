@@ -1,0 +1,635 @@
+1：保留1位小数
+	cout<<setiosflags(ios::fixed)<<setprecision(2)<<sum<<endl;
+	printf("%.3f",v2[N-M]);
+2：指向一个int型数组 用一个int[]数组 迭代
+3：#include <stdio.h>
+	输入输出 printf("%02d:%02d:%02d\n", hour, minutes, second);
+	scanf("%d%d%d",&a,&b,&c);
+	 scanf("%d%d", &node[a].key, &node[a].next);
+　　printf("a=%d,b=%d,c=%d",a,b,c);
+4： printf ("Preceding with blanks: %10d \n", 1977);
+    printf ("Preceding with zeros: %010d \n", 1977);
+	Preceding with blanks:       1977
+	Preceding with zeros: 0000001977
+5：	pair<int,double> node[N+1];
+    for(int i=1;i<N+1;i++){
+        a[i]=a[i]/100;
+        node[i] = make_pair(i,a[i]);
+    }
+	bool cmp(pair<int,double> a,pair<int,double> b)
+	{
+		if(a.second==b.second){
+			return (a.first<b.first);
+		}else {
+			return a.second>b.second;
+		}
+	}
+6：replace(str.begin(),str.end(),'/','0');
+7：指向set集合 遍历的时候 用迭代器 因为不是数组
+	cout<<*iter;
+    for(iter++;iter!=v2.end();iter++){
+        cout<<" "<<*iter;
+    }
+	set<int> v2;
+    set<int>::iterator iter;
+	
+8：	行尾不允许有多余空格
+	cnt  = 0;
+	if(level[i] != -1 && cnt != N - 1) {
+		printf("%d ", level[i]);
+		cnt++;
+	} else if(level[i] != -1){
+		printf("%d", level[i]);
+		break;
+	}
+9:使用sscanf和sprintf函数。
+	sscanf() – 从一个字符串中读进与指定格式相符的数据
+	sprintf() – 字符串格式化命令，主要功能是把格式化的数据写入某个字符串中。
+	sscanf(a, "%lf", &temp); lf？
+    sprintf(b, "%.2lf",temp); 
+10：求字符数组的长度 char a[50]
+	strlen(a) 
+11: 输入的情况
+	while(scanf("%d",&n)!=EOF)
+12：c[t++]
+
+13：    搜搜这个是干嘛的
+		sscanf(a,"%lf",&temp);
+        sprintf(b,"%.2lf",temp);
+		可以直接把字符串转成double类型的数字？
+	
+	
+13：printf 一个字符串
+
+14：怎么能让控制台定住呢
+cin.ignore();
+
+system("PAUSE");
+
+加一个
+System("Pause");
+或者
+getchar();
+或者
+cin>>变量名
+
+15：整形的取值范围
+
+char             -128 ~ +127        (1 Byte)
+short             -32767 ~ + 32768    (2 Bytes)
+unsigned short     0 ~ 65536        (2 Bytes)
+int             -2147483648 ~ +2147483647   (4 Bytes)
+unsigned int         0 ~ 4294967295    (4 Bytes)
+long == int
+long long         -9223372036854775808 ~ +9223372036854775807    (8 Bytes)
+double         1.7 * 10^308        (8 Bytes)
+
+16：while(scanf("%d", &n) != EOF) {
+		if(n < 0) break;
+		scanf("%d", &d);
+		if(isprime(n) == false) {
+			printf("No\n");
+			continue;
+		}
+		
+17：
+bool isPrime(int num)
+{
+    if(num<=1){
+        return false;
+    }
+    for(int i=2;i<=sqrt(num);i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+    return true;
+}
+
+p=m*n;//用来求最小公倍数
+  while(m!=0)
+  {
+   r=n%m;
+   n=m;
+   m=r;
+  }
+   cout<<"最小公倍数:"<<p/n<<endl;
+
+18：scanf("%d/%d/%d",&year, &month, &day);
+19：swap(a,c);
+
+20：    
+	a3 = (BSum-ASum) / (29*17);
+    b3 = (BSum-ASum) % (29*17) /29;
+    c3 = (BSum-ASum) % (29*17) %29;
+
+
+21：
+		if (it != s.begin())
+            printf(" ");
+        printf("%05d", *it);
+
+22：
+	vector<int> v(n);
+	for(int i = 0; i < n; ++i){
+        scanf("%d", &v[i]);
+    }
+23：reverse(strB.begin(),strB.end()); 字符串逆转
+
+24: 字符串相加 是有区别的！+= 和 “J”+str
+
+25: 查一下动态规划等基本的算法
+
+26：建堆的过程/不断调整堆 
+
+27：并查集
+
+28：
+Node* build_tree(int back[],int in[],int length)
+{
+    if(length==0){
+        return NULL;
+    }
+    Node* temp = new Node;;
+    int pos = 0;
+    while(in[pos]!= back[length-1]){
+        pos++;
+    }
+
+    temp->data = in[pos]; ////建树的具体代码
+    temp->lchlid = build_tree(back,in,pos);
+    temp->rchild = build_tree(back+pos,in+pos+1,length-pos-1);
+    return temp;
+}
+
+29：
+考虑到进位，乘以2以后可能会多出一位，而且20位的数字要用string表示而不是用long long表示。
+
+可以看到以下数字的表示范围中long long不够20位。
+int ,long , long long类型的范围
+
+unsigned int 0～4294967295 
+int 2147483648～2147483647 
+unsigned long 0～4294967295
+long 2147483648～2147483647
+long long的最大值：9223372036854775807 （刚好19位）
+
+29：std::string::npos
+static const size_t npos = -1;
+
+30：longlong溢出的情况
+
+31：堆 并查集 递归分治 贪心 动态规划 回溯搜索 
+
+32：string.h strlen 求字符数组的实际长度 
+
+    char a[22];
+    scanf("%s",a);
+    int flag = 0;
+    int len = strlen(a);
+	
+33：
+void *memset(void *s, int ch, size_t n);
+函数解释：将s中当前位置后面的n个字节 （typedef unsigned int size_t ）用 ch 替换并返回 s 。
+memset：作用是在一段内存块中填充某个给定的值，它是对较大的结构体或数组进行清零操作的一种最快方法
+
+34：
+ vector<int>::iterator iter = find(v1.begin(),v1.end(),1);
+    cout<<*iter;
+
+35：贪心算法 一直往前 寻找最优解
+
+36：<%=request.getContextPath()%>和${pageContext.request.contextPath}获取的结果都是项目名（上下文）
+
+37：分数的最小公倍数：分子=分子的最小公倍数、分母=分母的最大公约数。
+	注意：求分数的最小公倍数时，这两个分数一定要化简为最简形式，不然会出错。
+	
+38：
+int a[1100000];
+memset(a,0,sizeof(a));//初始化，将其全部标记为0 
+需要包含 #include <string.h>
+
+39：超时的情况 ~~~~  while(~scanf("%d %d",&a,&b)){
+
+40：
+ code blocks使用
+Ctrl+Shift+C：注释掉当前行或选中块
+Ctrl+Shift+X：解除注释
+Tab：缩进当前行或选中块
+Shift+Tab：减少缩进按住
+Ctrl，滚动鼠标滚轮，放大或缩小字体编译与运行部分
+Ctrl + F9：编译
+Ctrl + F10：运行上次成功编译后的程序
+Ctrl +　Shift + F9:编译当前文件（而不是当前打开的工程项目）
+F9：编译并运行当前代码（如果编译错误会提示错误而不会运行）
+F8：debug
+F10:全屏
+Ctrl + C：终止正在运行的程序
+Ctrl + Z：终止输入界面部分
+Shift + F2：显示或隐藏左侧导航栏
+	
+41：    freopen("in.txt", "r", stdin);
+    //freopen("out.txt", "w", stdout);
+	
+42：Standard C String
+
+atof：char* 转double
+atoi：char* 转int
+atol：char* 转long
+以上函数使用需要包含头文件<cstdlib>，即#include <cstdlib>。 如果要将string转为double,int或long，只需要先用c_str()将它转为char*, 然后使用上面的函数做转换即可。
+
+double d = atof("42.3");
+int i = atoi("423");
+long l = atol("2313455");
+string s = "23.45";
+d = atof(s.c_str());
+isalnum：如果字符是一个字母或者一个数字，返回非0值；否则返回0
+isalpha：如果字符是一个字母，返回非0值；否则返回0
+isdigit：如果字符是0－9的一个数，返回非0值；否则返回0
+以上函数的使用需要包含头文件<cctype>，即#include <cctype>。
+
+cout<<isalnum('A');	//返回非0
+cout<<isalpha('1'); //返回0
+cout<<isdigit('1'); //返回非0
+
+43：strB = string(strA.size()-strB.size(),'0')+strB;  //使两个字符串的长度相同 便于以后相加 注意加的左右不能反 下同 
+
+44：
+/*斯特林[striling]公式(求阶乘(n!)的位数) 
+-10-05 13:49
+例如1000阶乘位数： 
+log10(1)+log10(2)+···+log10(1000)取整后加1 
+*/
+
+45：
+	map<int,int> mapp;
+    for(int i = 0; i < n; i++){
+        int temp;
+        cin >> temp;
+        mapp[temp]++ ;
+    }
+    int max = 0, ans = 0;
+    for(map<int,int>::iterator iter = mapp.begin(); iter != mapp.end(); iter++){
+        if(iter -> second > max){
+            max = iter -> second;
+            ans = iter -> first;
+        }
+    }
+	
+46：Ctrl+Shift+C  注释代码块
+
+Ctrl+Shift+X  取消注释
+
+47：两个字符字符数组的比较
+strcmp
+int strcmp ( const char * str1, const char * str2 );
+Compare two strings
+Compares the C string str1 to the C string str2.
+
+This function starts comparing the first character of each string. If they are equal to each other, it continues with the following pairs until the characters differ or until a terminating null-character is reached.
+	
+	重载小于运算符
+	bool operator < (const Student &b){
+        if(b.grade != grade){
+            return grade < b.grade;
+        }else if(b.name != name){
+            return name < b.name;
+        }else {
+            return age < b.age;
+        }
+    }
+	
+48：宏定义（相当于一个函数）#define ISYEAR(x) ((x % 100 != 0 && x % 4 == 0) || x % 400 == 0) ? 1 : 0
+
+49：while(scanf("%4d %2d %2d",&y1, &m1, &d1) != EOF){
+        scanf("%4d %2d %2d",&y2, &m2, &d2);
+        printf("%d\n",abs(buf[y2][m2][d2]-buf[y1][m1][d1]) + 1);
+    }
+	
+50：哈希表！
+		int Hash[101] = {0};
+        for(int i = 0; i < n; i++){
+            int temp;
+            cin >> temp;
+            Hash[temp] ++;
+        }
+		
+51： string::npos find函数的使用
+
+52： mapp进行key value排序
+
+bool cmp(pair<int,int> a,pair<int,int> b)
+{
+    if(a.second == b.second){
+        return a.first < b.first;
+    }
+    return a.second > b.second;
+}
+int main()
+{
+    map<int,int> mapp;
+    int n;
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        int t;
+        cin >> t;
+        mapp[t]++;
+    }
+    vector<pair<int,int> > vec (mapp.begin(), mapp.end());
+    sort(vec.begin(),vec.end(),cmp);
+    cout << vec[0].first;
+    return 0;
+}
+
+53： 判断的时候从后往前判断 不然第一个就判断大的值 然后如果是一个非常小的值呢？
+
+54：vector<string> v1;
+    string str;
+    //getchar();
+    while(cin >> str){
+        if(str == ".")break;
+        v1.push_back(str);
+    }
+
+55： 输入一个double类型的数值
+	 while(scanf("%lf %d",&n, &m) != EOF){
+
+56：	for(map<int,int>::iterator iter = mapp.begin(); iter != mapp.end(); iter++){
+            if(iter->second % 2 != 0){
+                cout << iter->first;
+                break;
+            }
+        }
+57：//遍历a中每一个字符，直到a字符串结尾
+	char a[11];
+    char b[11];
+    while(~scanf("%s%s", a, b)){ //利用字符串将两个数组读入，作为字符串保存在内存中
+        int ans = 0;
+        for(int i = 0; a[i] != 0; i++){ //遍历a中每一个字符，直到a字符串结尾
+            for(int j = 0; b[j] != 0; j++){
+                ans += (a[i] - '0') * (b[j] - '0');
+            }
+        }
+        printf("%d", ans);
+    }
+	
+58：scanf("%lld %lld",&a, &b); 输入一个long long 类型的值
+
+59：
+//筛素数法
+bool mark[100001];
+int prime[100001];
+int primeSize;
+void init()
+{
+    primeSize = 0;
+    for(int i = 2; i <= 100000; i++){
+        if(mark[i]){
+            continue;
+        }
+		mark[i] = true;
+        prime[primeSize++] = i;
+        for(int j = i * i; j <= 100000; j += i){
+            mark[j] = true;
+        }
+    }
+}//用素数筛法筛选出2到100000以内的所有素数
+
+60:
+//定义一个很大的数组  比如说1000000
+数组申明在函数内部，属于局部变量，存放在了栈上，
+看看数组占用的内存大小：1000000=1000*1000然后乘以int型数据长度
+1000*1000*4byte约等于4M,
+而栈的默认内存空间为1M左右，所以会导致内存溢出
+解决这个问题，可以将数组申明在全局存储区或堆上即可
+方法一：申明为全局变量
+方法二：存放在堆上
+
+61：	逆向迭代器
+		set<int>::reverse_iterator iter= s1.rbegin();
+        if(flag[*iter] == 1){
+            cout << "-" << *iter ;
+        }
+        else cout << *iter ;
+        for(iter++; iter != s1.rend(); iter++){
+            if(flag[*iter] == 1){
+                cout << " -"<< *iter ;
+            }
+            else
+                cout << " "<< *iter ;
+        }
+		
+62：输入字符数组： 和 double 类型的数  不然会出现错误的情况
+	char c[50];
+    double x, y;
+    double ans = 0;
+    while(scanf("%s %lf %lf", c, &x, &y) != EOF){
+        ans += x * y;
+    }
+
+63：字母转换 ： 注意这里的小写转大写用了一个函数 toupper，需要用头文件ctype.h
+	//tolower是大写转成小写
+	
+64：将一个数字转换成以多少进制的方式 ： 
+	string str = "";
+    while(n != 0){
+        int yushu = n % 2;
+        str = ((char)(yushu + '0')) + str  ;
+        n = n / 2;
+    }
+    cout << str << endl;
+
+65：
+int gcd(int a, int b)
+{
+    return b == 0 ? a : gcd(b, a % b);
+}
+int lcm(int a, int b)
+{
+    return a  / gcd(a, b) * b;
+}
+
+66：大数
+		Scanner in  = new Scanner(System.in);
+		while(in.hasNextInt()){
+			int n = in.nextInt();
+			int m = in.nextInt();
+			if(n == 0 && m == 0) break;
+			BigInteger res = BigInteger.valueOf(n).pow(m);
+			BigInteger yuBigInteger = new BigInteger("1000");
+			System.out.println(res.mod(yuBigInteger));
+		}
+	
+67：  	迭代器的使用： 
+		v1.erase(v1.begin() + j);
+		v1.insert(v1.begin() + (j + pos), num);
+		也可以直接使用iter + n
+
+68：
+因此先找到N个新郎中M个错一共有几种，显然是CMN=N!/(M!*(N-M)!)。即CMN=N!/M!/(N-M)!。
+
+然后在求出M个数的错排个数，递推关系：f[n]=(n-1)*(f[n-1]+f[n-2])
+
+详细推导过程：
+
+错排的情况：
+
+首先考虑，如果开始有n-1个新郎，并且这n-1个人都已经完成了错排（有f(n-1)种可能），现在又来了一个人，那么后来的第n个人可以通过用自己的新娘去和那n-1个人中的任意一个交换，来实现n个人都错排。这种情况有(n-1)*f[n-1]种可能;
+
+另外，如果开始的n-1个人不是都错排，那么要想使第n个人过来与其中一个交换后实现错排的话就必须满足两个条件：
+
+1.那n-1个人中只有一个人选到了自己的新娘，也就是说有n-2个人都已经错排了。
+
+2.第n个人必须和那个选到自己新娘的人去交换，但那个选到自己新娘的人可以是n-1个人中的任意一个。这种情况有(n-1)*f[n-2]种可能。
+
+其他情况都不能满足n个人错排。
+
+因此递推关系：f[n]=(n-1)*(f[n-1]+f[n-2])。
+
+69：string to int
+	1 : int a = 10;
+		stringstream ss;
+		ss << a;
+		string str = ss.str(); // <sstream>
+	2 :	to_string(); //<string> C++ 11
+
+70：char 字符数组 进行比较时 用strcmp即可
+	strcmp(a.name, b.name) //其中char name[101];
+
+71： 
+	//输入
+	//ABC
+	//BAC
+	char before[100], in[100];
+    while(scanf("%s", before) != EOF){
+        scanf("%s", in);
+        int L1 = strlen(before);
+        int L2 = strlen(in);
+        cout << L1 << " " << L2;
+    }
+	
+72：输入两个字符串
+    char c1[20], c2[20];
+    while(scanf("%s %s", c1, c2) != EOF) {
+	
+73：字符串查找算法：
+	string::size_type pos_P, pos_A, pos_T;
+    pos_P = str.find("P");
+    pos_A = str.find("A");
+    pos_T = str.find("T");
+	if(pos_A == string::npos || pos_P == string::npos || pos_T == string::npos){
+        return 0;
+    }
+    if(pos_P *  (pos_T - pos_P - 1) !=  (str.size() - pos_T - 1 )){
+        return 0;
+    }
+
+74：string to int
+#include <sstream>
+
+// st is input string
+int result;
+stringstream(st) >> result;
+
+75: 按成绩进行排序
+bool cmp(Node node1, Node node2)
+{
+    if(node1.grade != node2.grade){
+        return node1.grade < node2.grade;
+    }
+    if(strcmp(node1.name, node2.name) != 0){
+        return strcmp(node1.name, node2.name) < 0;
+    }
+    return node1.age < node2.age;
+}
+
+76：将int转成string就行初始化
+ans.multiply(BigInteger.valueOf(i));
+
+77：字符数组
+	char c1[200], c2[200], c3[200], c4[200];
+    gets(c1);
+    gets(c2);
+    int len1 = strlen(c1);
+    int len2 = strlen(c2);
+	c4[index] = '\0'; //手动添加字符串结束符 便于字符串的遍历
+	
+	/**
+	* 字符串比较函数
+    * 设这两个字符串为str1，str2，
+    * 若str1==str2，则返回零；
+    * 若str1<str2，则返回负数；
+    * 若str1>str2，则返回正数。
+    **/
+    if(strcmp(c3, c4) == 0){
+        cout << "YES" << endl;
+    }else {
+        cout << "NO" << endl;
+    }
+
+78：string temp = str.substr(i, str.size());
+	
+	
+	
+	
+	
+	
+	
+	
+Ctrl+Alt+Space 代码提示 
+Ctrl+Alt+O 去除无效的包引用 
+Ctrl+C 复制一行 
+Alt + up /down 代码上下移动 
+Ctrl + 鼠标右键 出现代码提示框 
+Ctrl +Z 撤销操作 
+Ctrl +D 删除一行 
+Ctrl +F 查找 
+Ctrl+/ 或 Ctrl+Shift+/ 注释（// 或者 /**/）
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+夏令营好玩吗
+每天都干嘛了
+能见到导师吗
+学姐是知道自己成绩然后去面的吗
+参加夏令营的 大概多少能被录取
+学姐是学硕还是专硕
+发论文了吗
+六级分高不高
+如果有面试的话 有笔试之类的吗 比如收专业课什么的 面试都是有啥啊
+
+学姐你好哇！
+	很不好意思打扰你的保研生活呐~关于保研，我有一种直觉，我有那个学校推免的资格。 （迷之自信 也是服我自己 - -） 
+   所以有几个小问题想问一下学姐。
+1：你当初报夏令营的时候知道你有咱们的推免资格吗？
+2：那个夏令营好玩吗。。每天都参加了啥样的活动，那个A档B档怎么算的啊，需要什么样的条件才能	获得什么优秀	营员的称号啊？或者这么问，你当时做了哪些的努力来争取到优秀营员的称号？
+3：参加夏令营录取获得优秀营员的比例大概是多少啊？学姐当时是只参加了天大一所学校组织的夏令	营吗？
+4：学姐在获取正式保研资格之前，发表过什么样的文档吗？这方面导师看重吗？我现在是啥也没有的	那种，学姐感觉有啥希望吗。有点绝望。
+5：学姐英语怎么样，我六级分压线过。。感觉有点危险呐。。
+6：天大最后面试的时候或者问导师面试的时候 有那种笔试专业课的吗，或者上机调程序的那种。？
+7：学姐 能不能给我一点努力的方向啊，我现在是真的有点虚。。。。
+
+我个人感觉现在再想做些什么其它的应该有点迟了吧，我觉得是，比赛的话像数学建模那种时间不对号，专业的比赛估计时间也不够；英语的话四六级时间也过了是吧，夏令营之前没法儿重考也不知道成绩；不过也有些夏令营是在暑假期间举办的。
+老师，不好意思打扰您休息了。那个我哥的证明 是需要手写内容然后盖章 还是可以打印出来 然后盖上公司的章 还是两个都可以？
